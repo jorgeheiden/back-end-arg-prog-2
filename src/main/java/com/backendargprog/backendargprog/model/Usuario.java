@@ -27,6 +27,12 @@ public class Usuario {
     //Se mapea por el id => (mappedBy = "idProy")
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "idProy")
     private List<Proyectos> proyectosList;
+    
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "idHab")
+    private List<Habilidad> habilidadList;
+    
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "idTrab")
+    private List<Trabajo> trabajoList;
 
     public Usuario(){
 
