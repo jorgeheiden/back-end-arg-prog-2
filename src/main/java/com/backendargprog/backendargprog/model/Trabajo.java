@@ -15,13 +15,15 @@ public class Trabajo {
     @GeneratedValue(strategy = GenerationType.AUTO)
     
     private Long idTrab;
+    private String imagenTrab;
     private String nombreTrab;
     private String descripcionTrab;
 
     public Trabajo(){}
     
-    public Trabajo(Long idTrab, String nombreTrab, String descripcionTrab) {
+    public Trabajo(Long idTrab,String imagenTrab, String nombreTrab, String descripcionTrab) {
         this.idTrab = idTrab;
+        this.imagenTrab= imagenTrab;
         this.nombreTrab = nombreTrab;
         this.descripcionTrab = descripcionTrab;
     }
